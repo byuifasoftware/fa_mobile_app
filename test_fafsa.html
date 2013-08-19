@@ -1,0 +1,78 @@
+ <!DOCTYPE html> 
+<html> 
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta content="width=device-width, minimum-scale=1, maximum-scale=1" name="viewport">
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+	
+	<script type="text/javascript" src="fao.js"></script>	
+</head>
+	
+ <!-- header -->
+<div data-role="page" id="page1">
+	<img class="fit" src="images/background.png"/> 
+	<div class="move"></div> <!--- Move the content up --->    
+	
+	
+    <div data-theme="b" data-role="header" data-position="fixed"> 
+    	<a data-role="button" data-inline="true" data-rel="back" data-transition="slidedown" data-theme="b" href="#page1" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left"> back </a>
+    	<div style="height: 30px;">
+        	<span class="ui-title"> FAFSA </span>
+        </div>
+	</div>
+    
+<!-- page content -->
+    <div data-role="content">
+    	<a data-role="button" data-inline="false" data-transition="none" data-theme="d" style="height: 40px; margin-top: 20px; margin-bottom: 15px; "> <h4 style="margin-top: 0px;">FAFSA Submission Deadline</h4> </a>
+    	<div data-role="collapsible-set" data-theme="b" data-content-theme="b" style="width: 500">
+          	  <div data-role="collapsible">
+                    <h3>2013 Fall</h3>
+                    <h4 style="width:95%; margin-left: 5px; margin-top: 0px; margin-bottom: -6px;">Document Submission Deadline</h4>
+               	    <hr />
+                    <p style="width:95%; margin-left: 5px; margin-top: -4px; margin-bottom: 20px;">June 1, 2013</p>
+                    <h4 style="width:95%; margin-left: 5px; margin-top: 10px; margin-bottom: -6px;">Document Completion Deadline</h4>
+               		<hr />
+                    <p style="width:95%; margin-left: 5px; margin-top: -4px; margin-bottom: 0px;">July 1, 2013</p>
+              </div>
+            
+ 
+            <div data-role="collapsible">
+                   <h3>2014 Winter</h3>
+                   <h4 style="width:95%; margin-left: 5px; margin-top: 0px; margin-bottom: -6px;">Document Submission Deadline</h4>
+                   <hr />
+                   <p style="width:95%; margin-left: 5px; margin-top: -4px; margin-bottom: 20px;">October 1, 2013</p>                   
+                   <h4 style="width:95%; margin-left: 5px; margin-top: 10px; margin-bottom: -6px;">Document Completion Deadline</h4>
+                   <hr />
+                   <p style="width:95%; margin-left: 5px; margin-top: -4px; margin-bottom: 0px;">November 1, 2013</p>
+            </div>
+            
+            
+            <div data-role="collapsible">
+                 <h3>2014 Spring</h3>
+                 <h4 style="width:95%; margin-left: 5px; margin-top: 0px; margin-bottom: -6px;">Document Submission Deadline</h4>
+                 <hr />
+                 <p style="width:95%; margin-left: 5px; margin-top: -4px; margin-bottom: 20px;">January 1, 2013</p>
+                 <h4 style="width:95%; margin-left: 5px; margin-top: 10px; margin-bottom: -6px;">Document Completion Deadline</h4>
+                 <hr />
+                 <p style="width:95%; margin-left: 5px; margin-top: -4px; margin-bottom: 0px;">February 1, 2013</p>
+            </div>
+        </div>
+    </div>
+    
+<!--- Footer Nav Bar ---->   
+    <div data-theme="b" data-role="footer" data-position="fixed">
+    	<div data-role="navbar" data-iconpos="bottom">
+             <ul>
+                  <li><a href="test.html" data-transition="fade" data-theme="b" data-icon="home">Home</a></li>
+                  <li><a href="search.html" data-transition="fade" data-theme="b" data-icon="search">Search</a></li>
+                  <li><a href="https://secure.byui.edu/cas/login?service=https://web.byui.edu/Services/Login/?RedirectURL=https%3a%2f%2fmy.byui.edu%2f%3fcid%3dhli%3a111" data-transition="fade" data-theme="b" data-icon="grid">MyBYUI</a></li>
+                  <li><a href="settings.html" data-transition="fade" data-theme="b" data-icon="gear">Settings</a></li>
+             </ul>
+        </div>
+    </div>
+</div>
+
+</html>

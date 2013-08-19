@@ -1,0 +1,104 @@
+  <!DOCTYPE html> 
+<html> 
+<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta content="width=device-width, minimum-scale=1, maximum-scale=1" name="viewport">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+<html>
+    <head>
+        <style>
+	        .head{
+	        	 margin-left: -20px;
+	        	 margin-top: -20px;
+	        }
+            .home{
+            	position:fixed;
+                background: url('images/home/lined_background-06.png') repeat;
+                height: 325px;
+                width: 320px;
+                margin-bottom: -60px;
+                margin-left: -20px;
+            }
+            
+            .center {
+    				margin-left:auto; 
+    				margin-right:auto;
+                    width:70%;
+            }
+            .break_container {
+            	position:fixed;
+            		margin-top: 30px;
+            	    margin-left:22px; 
+    				margin-right:20px;
+                    
+            }
+            
+            
+            ////////////////////////////////////////////////////////////////
+            
+            ul.form {
+   				background-color: #999;
+   				width: 100%;
+   				margin: 0;
+   			}
+   			
+   			ul.form li {
+			   background: none;
+			   text-align: center;
+  			}
+  			
+  			ul.form li input[type="text"].searchbox {
+			   color: #333;
+			   background: #e9e9e9;
+			   border: 1px solid #ccc; 
+			   font: normal 15px Arial;
+			   width: 80%;
+			   height: 25px;
+			   padding: 0 0 0 8px;
+			   display: inline-block;
+			   margin: 0 10px 0 0;
+			   -webkit-border-radius: 12px;
+   			}
+   			
+   			ul.form li input[type="submit"].search {
+			   background-image: url(../images/search.png);
+			   background-position: right;
+			   background-repeat: no-repeat;
+			   width: 24px;
+			   height: 24px;
+			   border: 0;
+			   padding: 0;
+			   margin: 0 10px 0 0;
+			   display: inline;
+			   vertical-align: middle;
+		    }	
+            
+        </style>
+    </head> 
+
+    <body> 
+        <div data-role="page" id="page1">
+        	<a class="ui-btn-left" data-icon="arrow-l" href="javascript:history.back(1) " data-theme="a">Back</a>
+                <div data-theme="a" data-role="footer" data-position="fixed">
+                    <div data-role="navbar" data-iconpos="top">
+                        <ul>
+                            <li><a href="home.html" data-transition="fade" data-theme="b" data-icon="home">Home</a></li>
+                            <li><a href="search.html" data-transition="fade" data-theme="b" data-icon="search">Search</a></li>
+                            <li><a href="https://secure.byui.edu/cas/login" data-transition="fade" data-theme="b" data-icon="grid">MyBYUI</a></li>
+                            <li><a href="settings.html" data-transition="fade" data-theme="b" data-icon="gear">Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+		<form method="post" action="yourscript.html">
+			<ul class="form">
+				<li><input name="searchfield" type="text" class="searchbox" placeholder="Search Content" /> <input type="submit" name="Submit" class="search" /;></li>
+			</ul>
+		</form>
+
+
+
+

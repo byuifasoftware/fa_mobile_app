@@ -1,0 +1,50 @@
+ <!DOCTYPE html> 
+<html> 
+<head>  
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta content="width=device-width, minimum-scale=1, maximum-scale=1" name="viewport">
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+	
+	<script type="text/javascript" src="fao.js"></script>	
+</head>
+	
+<!-- header -->
+<div data-role="page" id="page1">
+	<img class="fit" src="images/background.png"/> 
+	<div class="move"></div> <!--- Move the content up --->    
+		
+    <div data-theme="b" data-role="header" data-position="fixed">
+    	 <a data-role="button" data-inline="true" data-rel="back" data-transition="slidedown" data-theme="b" href="#page1" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left"> back </a>
+    	
+    	<div style="height: 30px;">
+        	<span class="ui-title"> Suzanne Williams </span>
+        </div>
+    </div>
+    
+
+<!-- page content -->
+    <div data-role="content">
+    	<div style=" text-align:center">
+            <img style="width: 120px; height: 170px; margin-bottom: 15px;" border="5" src="http://web.byui.edu/Directory/Employee/williamss.jpg">
+        </div>
+        
+        <a data-role="button" data-transition="slide" data-theme="b" href="tel:+12084961622" data-icon="arrow-r" data-iconpos="right"> 1 + (208) - 496 - 1622</a>
+        <a data-role="button" data-transition="slide" data-theme="b" href="mailto:williamss@byui.edu" data-icon="arrow-r" data-iconpos="right"> williamss@byui.edu </a>
+    </div>
+			
+<!--- Footer Nav Bar ---->   
+    <div data-theme="b" data-role="footer" data-position="fixed">
+    	<div data-role="navbar" data-iconpos="bottom">
+             <ul>
+                  <li><a href="test.html" data-transition="fade" data-theme="b" data-icon="home">Home</a></li>
+                  <li><a href="test_search.html" data-transition="fade" data-theme="b" data-icon="search">Search</a></li>
+                  <li><a href="https://secure.byui.edu/cas/login?service=https://web.byui.edu/Services/Login/?RedirectURL=https%3a%2f%2fmy.byui.edu%2f%3fcid%3dhli%3a111" data-transition="fade" data-theme="b" data-icon="grid">MyBYUI</a></li>
+                  <li><a href="test_settings.html" data-transition="fade" data-theme="b" data-icon="gear">Settings</a></li>
+             </ul>
+        </div>
+    </div>
+</div>
+</html>

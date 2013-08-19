@@ -1,0 +1,80 @@
+
+    
+    <!DOCTYPE html> 
+<html> 
+<head> 
+	<title>My Page</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta content="width=device-width, minimum-scale=1, maximum-scale=1" name="viewport">
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+<html>
+    <head>
+    	<link rel="apple-touch-icon" href="icon.png" /> <!---icon--->
+    	<link rel="apple-touch-startup-image" href="images/loading.png" /> <!---loading screeen--->
+    	
+        <style>
+	        .head{
+	        	 margin-left: -20px;
+	        	 margin-top: -20px;
+	        }
+            .home{
+            	position:fixed;
+                background: url('images/background.png') repeat;
+                height: 370px;
+                width: 325px;
+                margin-left: -20px;
+                margin-top: -10px;
+            }
+            
+            .center {
+    				margin-right:auto;
+                    width:70%;
+            }
+            .break_container {
+            		position:fixed;
+            		margin-top: 42px;
+            	    margin-left:25px; 
+    				margin-right:20px;	
+            }
+        </style>
+    </head> 
+
+    <body> 
+        <div data-role="page" id="page1">
+                <div data-theme="a" data-role="footer" data-position="fixed">
+                    <div data-role="navbar" data-iconpos="top">
+                        <ul>
+                            <li><a href="home.html" data-transition="fade" data-theme="b" data-icon="home">Home</a></li>
+                            <li><a href="search.html" data-transition="fade" data-theme="b" data-icon="search">Search</a></li>
+                            <li><a href="https://secure.byui.edu/cas/login" data-transition="fade" data-theme="b" data-icon="grid">MyBYUI</a></li>
+                            <li><a href="settings.html" data-transition="fade" data-theme="b" data-icon="gear">Settings</a></li>
+                        </ul>
+                    </div>
+                </div>
+<!-- ******* Content Below *******-->
+            <div data-role="content">
+            	<div class="head">        
+                  	<img src="images/byui_fao_logo.png">
+                	<div class="center"><img src=images/home/fao.png></div>
+                </div>
+                
+                <div class="home">
+                	
+                	 <!---Who is my Counselor (We need to change this from advisor to counselor), contact us. Let's see how this looks.--->
+                	
+                    <div class="break_container">
+                        <a href=http://www.google.com> <img src=images/home/faq.png></a><Br>
+                        <a href="https://my.byui.edu/ICS/Finances/Financial_Aid.jnz?portlet=Financial_Aid_Document_Tracking" > <img src=images/home/doc_tracking.png></a><Br>
+                        <a href="https://my.byui.edu/ICS/Finances/Financial_Aid.jnz?portlet=Financial_Aid_Awards" > <img src=images/home/fa_awards.png></a><Br>   	
+                        <a href='deadlines.html'> <img src=images/home/deadlines.png></a><Br>
+                        <a href=http://www.google.com> <img src=images/home/who_is_my_advisor.png></a><Br>  		    
+                        <a href='contact.html'> <img src=images/home/contact.png></a> <Br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+ <!DOCTYPE html> 
+<html> 
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta content="width=device-width, minimum-scale=1, maximum-scale=1" name="viewport">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>	
+	<script type="text/javascript" src="fao.js"></script>
+</head>
+	
+ <!-- header -->
+<div data-role="page" id="page1">
+    <div data-theme="b" data-role="header" data-position="fixed">
+    	<div>
+            <img class="logo" src="images/byui_logo.png" style="position: absolute;" />
+      	  	<span class="ui-title"> FINANCIAL AID </span>
+        </div>
+    </div>
+    
+<!-- page content -->
+   	<img class="fit" src="images/background.png"/>     
+    <div class="move"></div> <!--- Move the content up --->
+    
+    <div data-role="content">
+        <ul data-role="listview" data-divider-theme="b" data-inset="true">
+            <li data-theme="c">
+                <a href="test_contact.html" data-transition="slide"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKSauCUBXUedaNufyVMN5tog2JnRdLClc1qf7vwdqzfpFmlK59vw" style="width: 30px; height: 30px;" /> </a>
+                
+            </li>
+        </ul>
+    </div>
+    
+<!--- Footer Nav Bar ---->   
+    <div data-theme="b" data-role="footer" data-position="fixed">
+    	<div data-role="navbar" data-iconpos="bottom">
+             <ul>
+                  <li><a href="test.html" data-transition="slidedown" data-theme="b" data-icon="home">Home</a></li>
+                  <li><a href="test_search.html" data-transition="fade" data-theme="b" data-icon="search">Search</a></li>
+                  <li><a href="https://secure.byui.edu/cas/login?service=https://web.byui.edu/Services/Login/?RedirectURL=https%3a%2f%2fmy.byui.edu%2f%3fcid%3dhli%3a111" data-transition="fade" data-theme="b" data-icon="grid">MyBYUI</a></li>
+                  <li><a href="settings.html" data-transition="fade" data-theme="b" data-icon="gear">Settings</a></li>
+             </ul>
+        </div>
+    </div>
+</div>
+
+</html>

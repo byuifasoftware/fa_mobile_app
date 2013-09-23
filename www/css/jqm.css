@@ -787,20 +787,22 @@ a.ui-link-inherit {
 .ui-icon-nodisc .ui-icon-alt .ui-icon-searchfield:after {
 	background-color: transparent;
 }
+
+/*
 /* Icon sprite
 -----------------------------------------------------------------------------------------------------------*/
-/* plus minus */
+/* plus minus 
 .ui-icon-plus {
 	background-position: 	-1px -1px;
 }
 .ui-icon-minus {
 	background-position: 	-37px -1px;
 }
-/* delete/close */
+/* delete/close 
 .ui-icon-delete {
 	background-position: 	-73px -1px;
 }
-/* arrows */
+/* arrows 
 .ui-icon-arrow-r {
 	background-position: 	-108px -1px;
 }
@@ -813,7 +815,7 @@ a.ui-link-inherit {
 .ui-icon-arrow-d {
 	background-position: 	-216px -1px;
 }
-/* misc */
+/* misc 
 .ui-icon-check {
 	background-position: 	-252px -1px;
 }
@@ -844,12 +846,12 @@ a.ui-link-inherit {
 .ui-icon-home {
 	background-position: 	-575px -1px;
 }
-/* search */
+/* search 
 .ui-icon-search,
 .ui-icon-searchfield:after {
 	background-position: 	-611px -1px;
 }
-/* checkbox radio */
+/* checkbox radio 
 .ui-icon-checkbox-on {
 	background-position: 	-647px -1px;
 }
@@ -862,14 +864,14 @@ a.ui-link-inherit {
 .ui-icon-radio-off {
 	background-position: 	-754px -1px;
 }
-/* menu edit */
+/* menu edit 
 .ui-icon-bars {
 	background-position: 	-788px -1px;
 }
 .ui-icon-edit {
 	background-position: 	-824px -1px;
 }
-/* HD/"retina" sprite
+ HD/"retina" sprite
 -----------------------------------------------------------------------------------------------------------*/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
        only screen and (min--moz-device-pixel-ratio: 1.3),

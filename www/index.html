@@ -15,6 +15,22 @@
 	<script type="text/javascript" src="js/jqm.js"></script>	
 	
 	<script type="text/javascript" src="js/fao.js"></script>	
+	
+	<script type="text/javascript">
+		function externalWeb(url) {
+				console.log("Initializing InAppBrowswer");
+				var ref = window.open(url, '_blank', 'location=yes' , 'EnableViewPortScale=yes');
+				ref.addEventListener('loadstart', function(event) { console.log("start loading external link  :"+ event.url); });
+				ref.addEventListener('loadstop', function(event) { console.log("External link lodaded without any problem  : "+ event.url); });
+				ref.addEventListener('loaderror', function(event) { console.log("There is error in loading External link :" + event.url);
+				                                                    alert('error: ' + event.message); });
+				ref.addEventListener('exit', function(event) { console.log("External link is closed now :"+ event.type + "link :"+ event.url ); });}
+				
+				
+				var targetURL="http://www.google.co.uk";
+				externalWeb(targetURL);
+
+	</script>
 
 	
 </head>

@@ -5,31 +5,25 @@
 	<meta content="width=device-width, minimum-scale=1, maximum-scale=1" name="viewport">
 	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
 	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>	
 	
-	<script type="text/javascript" src="fao.js"></script>	
-	</head>
+	
+	<script type="text/javascript" src="js/fao.js"></script>
+</head>
 	
  <!-- header -->
 <div data-role="page" id="page1">
-
-	
     <div data-theme="b" data-role="header" data-position="fixed">
-    	<a data-role="button" data-inline="true" data-rel="back" data-transition="slidedown" data-theme="b" href="#page1" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left"> back </a>
-    	<div style="height: 30px;">
-        	<span class="ui-title"> Robin Dunlop </span>
+    	<div>
+            <a data-role="button" data-inline="true" data-rel="back" data-transition="slidedown" data-theme="b" href="#page1" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left"> back </a>
+      	  	<span class="ui-title"> FACEBOOK </span>
         </div>
     </div>
     
 <!-- page content -->
-    <div data-role="content">
+   	<iframe class="iframe" src="https://m.facebook.com/BYUIFinancialAid" seamless> </iframe>     
+    <div class="move"></div> <!--- Move the content up --->
     
-    	<div style=" text-align:center">
-            <img style="width: 120px; height: 170px; margin-bottom: 15px;" border="5" src="http://web.byui.edu/Directory/Employee/dunlopr.jpg">
-        </div>
-        <a data-role="button" data-transition="slide" data-theme="b" href="tel:+12084961625" data-icon="arrow-r" data-iconpos="right"> 1 + (208) - 496 - 1625 </a>
-        <a data-role="button" data-transition="slide" data-theme="b" href="tel:dunlopr@byui.edu" data-icon="arrow-r" data-iconpos="right"> dunlopr@byui.edu </a>
-    </div>
     
 <!--- Footer Nav Bar ---->   
        <div data-theme="b" data-role="footer" data-position="fixed">
@@ -43,4 +37,5 @@
         </div>
     </div>
 </div>
+
 </html>

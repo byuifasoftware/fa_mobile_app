@@ -1,0 +1,77 @@
+ <!DOCTYPE html> 
+<html> 
+<head> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta content="width=device-width, minimum-scale=1, maximum-scale=1" name="viewport">
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.1/jquery.mobile-1.2.1.min.js"></script>
+	
+	<script type="text/javascript" src="fao.js"></script>
+	
+	<!--- including the google map api --->
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>	
+	
+	<script>
+			var myCenter=new google.maps.LatLng(43.817436,-111.781635);
+			function initialize()
+			{
+			var mapProp = {
+			   center:myCenter,
+			   zoom:17,
+			   panControl:false,
+			   zoomControl:true,
+			   mapTypeControl:false,
+			   scaleControl:true,
+			   streetViewControl:false,
+			    overviewMapControl:false,
+			    rotateControl:false,
+			   mapTypeId:google.maps.MapTypeId.ROADMAP
+			  };
+			
+			var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+			
+			var marker=new google.maps.Marker({
+			  position:myCenter,
+			  });
+			
+			marker.setMap(map);
+			}
+			
+			google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
+</head>
+	
+ <!-- header -->
+<div data-role="page" id="page1">
+  
+	
+    <div data-theme="b" data-role="header" data-position="fixed">
+    	 <a data-role="button" data-inline="true" data-rel="back" data-transition="slidedown" data-theme="b" href="#page1" data-icon="arrow-l" data-iconpos="left" class="ui-btn-left"> back </a>
+    	 <div style="height: 30px;">
+        	 <span class="ui-title"> OUR LOCATION </span>
+         </div>
+    </div>
+
+<!-- page content -->
+    <div data-role="content">    	
+    	<div class="map" id="googleMap" style="border-style:solid;"></div>
+						   
+    </div>
+			
+			
+<!--- Footer Nav Bar ---->   
+       <div data-theme="b" data-role="footer" data-position="fixed">
+    	<div data-role="navbar" data-iconpos="bottom">
+             <ul>
+                <li><a href="index.html" data-transition="slide" data-theme="b" data-icon="home">Home</a></li>
+                  <li><a href="search.html" data-transition="slide" data-theme="b" data-icon="search">Search</a></li>
+                  <li><a href="mybyui.html" data-transition="slide" data-theme="b" data-icon="grid">MyBYUI</a></li>
+                  <li><a href="settings.html" data-transition="slide" data-theme="b" data-icon="gear">Settings</a></li>
+             </ul>
+        </div>
+    </div>
+</div>
+</html>
